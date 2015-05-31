@@ -1,24 +1,26 @@
 <template name="map">
     <div class="map-container" style="width: 100%; max-width: 100%; height: 500px;">
         {{> googleMap name="mymap" options=mapOptions}}
+    </div>
+        {{> first googleMap}}
+</template>
 
+<template name="first">
+    <div>
+        {{profile}}
+        <br/>
+        first hello world
     </div>
 </template>
 
-<template name="searchbox">
 
-    <!--controlDiv-->
+<!--Want to put Center Map component in separate template-->
+<template name="CenterMapComponent">
     <div id="controlDiv">
-
-        <!--controlUI-->
-        <div id="controlUI" style="background-color: #fff; border: 2px solid #fff; border-radius: 3px; box-shadow: 0 2px 6px rgba(0,0,0,.3); cursor: pointer; margin-bottom: 22px; text-align: center;">
-
-            <!--controlText-->
-            <div id="controlText" style="color: rgb(25,25,25); font-family: Roboto,Arial,sans-serif; font-size: 16px; line-height: 38px; padding-left: 5px; padding-right: 5px;">
-                Centa Map
+        <div id="controlUI" style="...">
+            <div id="controlText" style="...">
+                Center Map
             </div>
-
         </div>
-
     </div>
 </template>
